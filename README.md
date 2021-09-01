@@ -35,6 +35,7 @@ and accomplishes the following:
 
 ✓ Takes in data in from the provisional
 database 
+
 ✓ Outputs label(s) for input data
 
 
@@ -48,5 +49,6 @@ following:
 ✓ Sample data that mimics the
 expected final database structure or
 schema 
+
 ✓ Draft machine learning module is
 connected to the provisional database
