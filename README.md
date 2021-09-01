@@ -10,7 +10,7 @@ Team members have drafted their project, including the following:
 ✓ Questions they hope to answer with the data
 
 
-#GitHub
+# GitHub
 
 Main Branch 
 
@@ -20,7 +20,7 @@ README.md README.md must include:
 
 ✓ Description of the communication protocols
 
-##Individual Branches 
+## Individual Branches 
 
 ✓ At least one branch for each team member
 
