@@ -11,3 +11,6 @@ We've chosen to review historic rent prices across the US and to create a machin
 * Which markets will show the most dramatic increase in rent in the future?
 * Which markets are predicted to have the smallest increased in rent prices? 
 
+## Group Communication
+
+We will be utilizing Slack as our main form of communication
