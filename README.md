@@ -19,10 +19,10 @@ Number of columns: 95 colums
 
 Source: https://www.zillow.com/research/data </br>
 
-Zillow calculates using their propietary algorithm called Zillow Observed Rent Index(ZORI). ZORI is a smoothed measure of the typical observed market rate rent across a given region. ZORI is a repeat-rent index that is weighted to the rental housing stock to ensure representativeness across the entire market, not just those homes currently listed for rent. The index is dollar-denominated by computing the mean of listed rents that fall into the 40th to 60th percentile range for all homes and apartments in a given region, which is once again weighted to reflect the rental housing stock.</br>
+The dataset is a calculated, weighted average of rental prices throughout the 100 largest metropolitan areas across the United States and is split up further by zip code. Zillow calculates using their propietary algorithm called Zillow Observed Rent Index(ZORI). ZORI is a smoothed measure of the typical observed market rate rent across a given region. ZORI is a repeat-rent index that is weighted to the rental housing stock to ensure representativeness across the entire market, not just those homes currently listed for rent. The index is dollar-denominated by computing the mean of listed rents that fall into the 40th to 60th percentile range for all homes and apartments in a given region, which is once again weighted to reflect the rental housing stock.</br>
 Details available on https://www.zillow.com/research/methodology-zori-repeat-rent-27092
 
-![Alt Text](https://github.com/RichelynScott/Final-Project-Group-B/tree/main/Resources/Images/Zillow_DataBase_Arch.png "Zillow DataBase Arch"){height=50px}</br>
+![Alt Text](https://github.com/RichelynScott/Final-Project-Group-B/tree/lyannebr/Resources/Images/Zillow_DataBase_Arch.png "Zillow DataBase Arch"){height=50px}</br>
 
 # Tools: 
 
@@ -46,7 +46,7 @@ Details available on https://www.zillow.com/research/methodology-zori-repeat-ren
 
 This analysis creates a schema consisting of four tables. We think this is the best way to divide the data because each table has its own unique focus, each table cannot really be divided into smaller tables (i.e. tables that are equally distinct and have fewer rows than before), and it is an intuitive way of dividing information for people who may use the data in the future.
 
-![Alt Text](https://github.com/RichelynScott/Final-Project-Group-B/tree/main/Resources/Images/db_prototype.png "general database prototype")</br>
+![Alt Text](https://github.com/RichelynScott/Final-Project-Group-B/tree/lyannebr/Resources/Images/db_prototype.png "general database prototype")</br>
 
 # Team Communication Protocols
 
