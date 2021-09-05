@@ -27,18 +27,17 @@ Number of COlumns: 95 colums
 
 Locations: Metro/US National Data Set
 
-Source: Zillow.com/data 
-
+Source: Zillow.com/data (please see Resources/Images/Zillow_DataBase_Arch)
 *(Source Explaination: Zillow calculates using thier propatery argurithem called Zillow Observed Rent Index(ZORI) Zillow Observed Rent Index (ZORI): A smoothed measure of the typical observed market rate rent across a given region. ZORI is a repeat-rent index that is weighted to the rental housing stock to ensure representativeness across the entire market, not just those homes currently listed for-rent. The index is dollar-denominated by computing the mean of listed rents that fall into the 40th to 60th percentile range for all homes and apartments in a given region, which is once again weighted to reflect the rental housing stock. Details available in ZORI methodology.f
 Zillow Data Architecture: See RESOURCES/IMAGES/ZillowArchitecture)*
 
 ## Tools: 
 
-Excel 
-PostgresSQL
-Zillow.com/data
+* Excel 
+* PostgresSQL
+* Zillow.com/data
 
-## DATABASE EXPLANSION
+## DATABASE EXPLANSION (See Resources/Images/DB_Prototype)
 
 * Outcome: Design the data warehouse for Zillow data by using a data modeling concepts. 
 * Purpose: Find useful insight for decision making for rental property owners and investors. 
@@ -48,3 +47,5 @@ Zillow.com/data
 * Every Table has a Primary Key that can not be NULL
 * Referential integrity is maintained with the help of FOREIGN Key
 * The table (see resource/image/DataModule) shows the one to many and many to one relationships; as needed
+
+This analysis creates a schema consisting of four tables. We think this is the best way to divide the data because each table has its own unique focus, each table cannot really be divided into smaller tables (i.e. tables that are equally distinct and have fewer rows than before), and it is an intuitive way of dividing information for people who may use the data in the future.
