@@ -4,15 +4,15 @@
 
 We have allowed for communication in the following paths:   
 1. SLACK 
-    -Group B Channel
-    -Private Group Channel
+    * Group B Channel
+    * Private Group Channel
 2. Group Contact list with individual phone numbers
   
 ## DATA SOURCE
 Data Set: Zip_ZORI_AllHomesPlusMultifamily_Smoothed.csv 
 
-# of rows : 2234 rows
-# of COlumns: 95 colums 
+Number of rows : 2234 rows
+Number of COlumns: 95 colums 
 
 Locations: Metro/US National Data Set
 
@@ -25,3 +25,13 @@ Zillow Data Architecture: See RESOURCES/IMAGES/ZillowArchitecture)*
 Excel 
 PostgresSQL
 Zillow.com/data
+
+## DATABASE EXPLANSION
+* Outcome: Design the data warehouse for Zillow data by using a data modeling concepts. 
+* Purpose: Find useful insight for decision making for rental property owners and investors. 
+
+* Data Module Design is 3NF.(Third normal form (3NF) is a database schema design approach for relational databases which uses normalizing principles to reduce the duplication of    data, avoid data anomalies, ensure referential integrity, and simplify data management.)
+* 3NF helps reduce data duplication, it leads to queries requiring multiple joins to retrieve answer.
+* Every Table has a Primary Key that can not be NULL
+* Referential integrity is maintained with the help of FOREIGN Key
+* The table (see resource/image/DataModule) shows the one to many and many to one relationships; as needed
