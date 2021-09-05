@@ -37,7 +37,7 @@ Zillow Data Architecture: See RESOURCES/IMAGES/ZillowArchitecture)*
 * PostgresSQL
 * Zillow.com/data
 
-## DATABASE EXPLANSION (See Resources/Images/DB_Prototype)
+## DATABASE EXPLAINATION (See Resources/Images/DB_Prototype)
 
 * Outcome: Design the data warehouse for Zillow data by using a data modeling concepts. 
 * Purpose: Find useful insight for decision making for rental property owners and investors. 
