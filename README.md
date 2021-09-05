@@ -22,7 +22,7 @@ Source: https://www.zillow.com/research/data </br>
 The dataset is a calculated, weighted average of rental prices throughout the 100 largest metropolitan areas across the United States and is split up within cities by zip code. Zillow calculates using their propietary algorithm called Zillow Observed Rent Index(ZORI). ZORI is a smoothed measure of the typical observed market rate rent across a given region. ZORI is a repeat-rent index that is weighted to the rental housing stock to ensure representativeness across the entire market, not just those homes currently listed for rent. The index is dollar-denominated by computing the mean of listed rents that fall into the 40th to 60th percentile range for all homes and apartments in a given region, which is once again weighted to reflect the rental housing stock.</br>
 Details available on https://www.zillow.com/research/methodology-zori-repeat-rent-27092
 
-![Alt Text](https://github.com/RichelynScott/Final-Project-Group-B/tree/lyannebr/Resources/Images/Zillow_DataBase_Arch.png "Zillow DataBase Arch"){height=50px}</br>
+![Alt Text](https://github.com/RichelynScott/Final-Project-Group-B/blob/lyannebr/Resources/Images/Zillow_DataBase_Arch.png "Zillow DataBase Arch"){height=50px}</br>
 
 # Tools: 
 
@@ -46,7 +46,7 @@ This analysis creates a schema consisting of four tables. We think this is the b
 * Referential integrity is maintained with the help of FOREIGN Key
 * The table (example pictured below) shows the one to many and many to one relationships; as needed
 
-![Alt Text](https://github.com/RichelynScott/Final-Project-Group-B/tree/lyannebr/Resources/Images/db_prototype.png "general database prototype")</br>
+![Alt Text](https://github.com/RichelynScott/Final-Project-Group-B/blob/lyannebr/Resources/Images/db_prototype.png "general database prototype")</br>
 
 
 
