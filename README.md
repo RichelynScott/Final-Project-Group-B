@@ -1,5 +1,7 @@
 # Final Project Group B
 
+[Link to Google Sheets Presentation](https://docs.google.com/presentation/d/1fltjRtZX1BJr0tq8ZaeOzK9XdhFQc2pVGuA4H81irGU/edit?usp=sharing)
+
 # Topic
 
 We have chosen to analyze historic rent prices across the U.S. and create a machine learning model to predict rent prices in the future. We chose this topic because the information is of interest to us, and we think the resulting predictions will be helpful to others. We will be using rental data from Zillow.com which contains rental averages over the period of 2014-2020 and is broken down by zip code and month. Zillow provides this data as a flat csv file.
@@ -22,7 +24,7 @@ Source: https://www.zillow.com/research/data </br>
 The dataset is a calculated, weighted average of rental prices throughout the 100 largest metropolitan areas across the United States and is split up within cities by zip code. Zillow calculates using their propietary algorithm called Zillow Observed Rent Index(ZORI). ZORI is a smoothed measure of the typical observed market rate rent across a given region. ZORI is a repeat-rent index that is weighted to the rental housing stock to ensure representativeness across the entire market, not just those homes currently listed for rent. The index is dollar-denominated by computing the mean of listed rents that fall into the 40th to 60th percentile range for all homes and apartments in a given region, which is once again weighted to reflect the rental housing stock.</br>
 Details available on https://www.zillow.com/research/methodology-zori-repeat-rent-27092
 
-![Alt Text](https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/Zillow_DataBase_Arch.png "Zillow DataBase Arch"){height=40px}</br>
+![Alt Text](https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/Zillow_DataBase_Arch.png "Zillow DataBase Arch")</br>
 
 # Tools: 
 
