@@ -1,90 +1,94 @@
-﻿-- Database SQL Scheme for Fair Market Value Analysis
+﻿-- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
 -- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
 
 
-CREATE TABLE "CFMR_df" (
+CREATE TABLE "FMV" (
+    "Unique_Number" Int   NOT NULL,
     "State" varchar   NOT NULL,
-    "Year" Float   NOT NULL,
-    "Studio" Float   NOT NULL,
-    "One Bedroom" Float   NOT NULL,
-    "Two Bedroom" Float   NOT NULL,
-    "Three Bedroom" Float   NOT NULL,
-	"Four Bedroom" Float   NOT NULL,
-    "Population" Float   NOT NULL,
-	"Percent Change" Float Not Null,
-    CONSTRAINT "pk_CFMR_DF" PRIMARY KEY (
-        "State"
+    "Year" Int   NOT NULL,
+    "Studio" Int   NOT NULL,
+    "TwoBedRoom" Int   NOT NULL,
+    "ThreeBedRoom" Int   NOT NULL,
+    "FourBedRoom" Int   NOT NULL,
+    "Population" Int   NOT NULL,
+    "PercentageChange" Int   NOT NULL,
+    CONSTRAINT "pk_FMV" PRIMARY KEY (
+        "Unique_Number"
      )
 );
 
-CREATE TABLE "CFMR18_df" (
+CREATE TABLE "2018FMV" (
+    "Unique_Number" Int   NOT NULL,
     "State" varchar   NOT NULL,
-    "Year" Float   NOT NULL,
-    "Studio" Float   NOT NULL,
-    "One Bedroom" Float   NOT NULL,
-    "Two Bedroom" Float   NOT NULL,
-    "Three Bedroom" Float   NOT NULL,
-	"Four Bedroom" Float   NOT NULL,
-    "Population" Float   NOT NULL,
-    CONSTRAINT "pk_CFMR18_df" PRIMARY KEY (
-        "State"
+    "Year" Int   NOT NULL,
+    "Studio" int   NOT NULL,
+    "TwoBedroom" int   NOT NULL,
+    "ThreeBedroom" int   NOT NULL,
+    "FourBedroom" int   NOT NULL,
+    "Population" int   NOT NULL,
+    "PercentageChange" int   NOT NULL,
+    CONSTRAINT "pk_2018FMV" PRIMARY KEY (
+        "Unique_Number"
      )
 );
 
-CREATE TABLE "CFMR19_df" (
+CREATE TABLE "2019FMV" (
+    "Unique_Number" Int   NOT NULL,
     "State" varchar   NOT NULL,
-    "Year" Float   NOT NULL,
-    "Studio" Float   NOT NULL,
-    "One Bedroom" Float   NOT NULL,
-    "Two Bedroom" Float   NOT NULL,
-    "Three Bedroom" Float   NOT NULL,
-	"Four Bedroom" Float   NOT NULL,
-    "Population" Float   NOT NULL,
-    CONSTRAINT "pk_CFMR19_df" PRIMARY KEY (
-        "State"
+    "Year" Int   NOT NULL,
+    "Studio" Int   NOT NULL,
+    "TwoBedRoom" Int   NOT NULL,
+    "ThreeBedRoom" Int   NOT NULL,
+    "FourBedRoom" Int   NOT NULL,
+    "Population" Int   NOT NULL,
+    "PercentageChange" Int   NOT NULL,
+    CONSTRAINT "pk_2019FMV" PRIMARY KEY (
+        "Unique_Number"
      )
 );
 
-CREATE TABLE "CFMR20_df" (
+CREATE TABLE "2020FMV" (
+    "Unique_Number" Int   NOT NULL,
     "State" varchar   NOT NULL,
-    "Year" Float   NOT NULL,
-    "Studio" Float   NOT NULL,
-    "One Bedroom" Float   NOT NULL,
-    "Two Bedroom" Float   NOT NULL,
-    "Three Bedroom" Float   NOT NULL,
-	"Four Bedroom" Float   NOT NULL,
-    "Population" Float   NOT NULL,
-    CONSTRAINT "pk_CFMR20_df" PRIMARY KEY (
-        "State"
+    "Year" Int   NOT NULL,
+    "Studio" Int   NOT NULL,
+    "TwoBedRoom" Int   NOT NULL,
+    "ThreeBedRoom" Int   NOT NULL,
+    "FourBedRoom" Int   NOT NULL,
+    "Population" Int   NOT NULL,
+    "PercentageChange" Int   NOT NULL,
+    CONSTRAINT "pk_2020FMV" PRIMARY KEY (
+        "Unique_Number"
      )
 );
 
-CREATE TABLE "CFMR21_df" (
+CREATE TABLE "2021FMV" (
+    "Unique_Number" Int   NOT NULL,
     "State" varchar   NOT NULL,
-    "Year" Float   NOT NULL,
-    "Studio" Float   NOT NULL,
-    "One Bedroom" Float   NOT NULL,
-    "Two Bedroom" Float   NOT NULL,
-    "Three Bedroom" Float   NOT NULL,
-	"Four Bedroom" Float   NOT NULL,
-    "Population" Float   NOT NULL,
-    CONSTRAINT "pk_CFMR21_df" PRIMARY KEY (
-        "State"
+    "Year" Int   NOT NULL,
+    "Studio" Int   NOT NULL,
+    "TwoBedRoom" Int   NOT NULL,
+    "ThreeBedRoom" Int   NOT NULL,
+    "FourBedRoom" Int   NOT NULL,
+    "Population" Int   NOT NULL,
+    "PercentageChange" Int   NOT NULL,
+    CONSTRAINT "pk_2021FMV" PRIMARY KEY (
+        "Unique_Number"
      )
 );
 
-CREATE TABLE "CFMR22_df" (
+CREATE TABLE "2022FMV" (
+    "Unique_Number" Int   NOT NULL,
     "State" varchar   NOT NULL,
-    "Year" Float   NOT NULL,
-    "Studio" Float   NOT NULL,
-    "One Bedroom" Float   NOT NULL,
-    "Two Bedroom" Float   NOT NULL,
-    "Three Bedroom" Float   NOT NULL,
-	"Four Bedroom" Float   NOT NULL,
-    "Population" Float   NOT NULL,
-    CONSTRAINT "pk_CFMR22_df" PRIMARY KEY (
-        "State"
+    "Year" Int   NOT NULL,
+    "Studio" Int   NOT NULL,
+    "TwoBedRoom" Int   NOT NULL,
+    "ThreeBedRoom" Int   NOT NULL,
+    "FourBedRoom" Int   NOT NULL,
+    "Population" Int   NOT NULL,
+    "PercentageChange" Int   NOT NULL,
+    CONSTRAINT "pk_2022FMV" PRIMARY KEY (
+        "Unique_Number"
      )
 );
-
 
