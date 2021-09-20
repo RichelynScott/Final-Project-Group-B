@@ -4,13 +4,15 @@
 
 # Topic
 
-We have chosen to analyze historic rent prices across the U.S. and create a machine learning model to predict rent prices in the future. We chose this topic because the information is of interest to us, and we think the resulting predictions will be helpful to others. We will be using rental data from Zillow.com which contains rental averages over the period of 2014-2020 and is broken down by zip code and month. Zillow provides this data as a flat csv file.
+We have chosen to analyze historic rent prices across the U.S. based on year, state, population, and number of bedrooms. We will use this data to create a machine learning model to predict future rent prices. We chose this topic because the information is of interest to us, and we think the resulting predictions will be helpful to others. We will be using fair market rent data from The Department of Housing and Urban Development (HUD), which contains rental information from 2018 to 2022 and is broken down by county and year. HUD provides this data as a flat csv file.
 
 ### With this project we hope to answer several questions:
 
+* What features have the greatest influence on rental prices?
+* What affect does change in features like location or population have on rental prices?
 * What will rent prices be in 2022 and beyond?
 * Which markets will show the most dramatic increase in rent in the future?
-* Which markets are predicted to have the smallest increased in rent prices? 
+* Which markets are predicted to have the smallest increased in rent prices?
 
 ## Data Source
 
