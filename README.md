@@ -1,7 +1,8 @@
 # Final Project Group B
 
 [Link to Google Sheets Presentation](https://docs.google.com/presentation/d/1fltjRtZX1BJr0tq8ZaeOzK9XdhFQc2pVGuA4H81irGU/edit?usp=sharing)</br>
-[Link to Tableau Public Dashboard] (https://public.tableau.com/app/profile/ly.agger/viz/RentalPricePrediction/FairMarketRentPricing?publish=yes)
+[Link to Tableau Public Dashboard](https://public.tableau.com/app/profile/ly.agger/viz/RentalPricePrediction/FairMarketRentPricing?publish=yes)
+
 
 # Topic
 
@@ -15,17 +16,7 @@ We have chosen to analyze historic rent prices across the U.S. based on year, st
 * Which markets will show the most dramatic increase in rent in the future?
 * Which markets are predicted to have the smallest increased in rent prices?
 
-## Data Source
-
-Data Sets: U.S. Department of Housing and Urban Development Annual Fair Market Rent (2018-2022)
-
-Source: https://www.huduser.gov/portal/datasets/fmr.html#2022 </br>
-
-We will be using fair market rent datasets from the U.S. Department of Housing and Urban Development (HUD). This is an annual report, so our data will be pulled from 5 different csv files that contain information on fair market rent prices broken down by number of bedrooms, county, state, population, and other information about the location.
-
-The location data does include some classifiers around size and town or county areas and description as well as some columns that provide no insight to our model, so those will be removed as well as formatting some of the existing information to make it easier to read and process. We also decided to group the information by state, so the rental prices by number of bedrooms as well as population will be averaged out based on number of counties within each state. Additionally, areas like Washington, D.C., Guam, and the Virgin Islands have been grouped and counted as states.
-
-# Tools: 
+## Tools: 
 
 * Excel
 * Python
@@ -34,6 +25,27 @@ The location data does include some classifiers around size and town or county a
 * Tableau Public
 * huduser.gov
 
+# Data Source
+
+Data Sets: U.S. Department of Housing and Urban Development Annual Fair Market Rent (2018-2022)
+
+Source: https://www.huduser.gov/portal/datasets/fmr.html#2022 </br>
+
+We will be using fair market rent datasets from the U.S. Department of Housing and Urban Development (HUD). This is an annual report, so our data will be pulled from 5 different csv files that contain information on fair market rent prices broken down by number of bedrooms, county, state, population, and other information about the location. The report is given as a .csv file each year for the next year's fair market rent prices. The web site provides the 5 most recent years of data.
+
+
+# Initial Exploratory Data Analysis
+
+### Cleaning the Data Sets
+
+Each file provides information and classifiers around size, county area names and description as well as some columns that provide no insight to our model, so those will be removed as well as formatting some of the existing information to make it easier to read and process. Several columns were removed: fips2010, a state number, metro_code, areaname, countyname, county_town_name, and a metro number. </br>
+![Alt Text](https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/initial_df.png "Raw Data Frame")</br>
+
+We renamed several columns for ease of identification (state, population, and number of bedrooms) and decided to group the information by state, rather than county. So the rental prices by number of bedrooms as well as population will be averaged based on number of counties within each state. Additionally, areas like Washington, D.C., Guam, and the Virgin Islands have been listed on their own. </br>
+![Alt Text](https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/clean_df.png "Cleaned Data Frame")</br>
+
+Finally, we added a year column to allow for each dataframe to be combined into one. This was done to simplify pulling in data to our machine learning models and to help identify trends thoughout the years, helping determine if specific years had an impact on changing rent prices.</br>
+![Alt Text](https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/combined_df.png "Combined Data Frame")</br>
 
 # Database
 
