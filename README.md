@@ -9,7 +9,7 @@ We have chosen to analyze historic rent prices across the U.S. based on year, st
 
 ### With this project we hope to answer several questions:
 
-* What features have the greatest influence on rental prices?
+* Which of these features have the greatest influence on rental prices?
 * What affect does change in features like location or population have on rental prices?
 * What will rent prices be in 2022 and beyond?
 * Which markets will show the most dramatic increase in rent in the future?
@@ -35,28 +35,27 @@ The location data does include some classifiers around size and town or county a
 * huduser.gov
 
 
-# Database Explanation
+# Database
 
 * Outcome: Design the data warehouse for historical data by using a data modeling concepts. 
 * Purpose: Find useful insight for decision making for rental property owners and investors as well as potential renters. 
 
 This analysis creates a schema consisting of six tables. Each table contains one year and is an intuitive way of dividing information for people who may use the data in the future. Additionally, the combined historical data is contained within one table, predictive data could also be added in as one table or annually for future use. Those tables can be joined to allow the dashboard to pull both past and future prices.
 
+
+![Alt Text](https://github.com/RichelynScott/Final-Project-Group-B/blob/main/PostgreSQL_Database/QuickDBD ERD SCHEMA.png "Database Schema")</br>
+
 * Data Module Design is 3NF.(Third normal form (3NF) is a database schema design approach for relational databases which uses normalizing principles to reduce the duplication of data, avoid data anomalies, ensure referential integrity, and simplify data management.)
 * 3NF helps reduce data duplication, it leads to queries requiring multiple joins to retrieve answer.
 * Every Table has a Primary Key that can not be NULL
 * Referential integrity is maintained with the help of FOREIGN Key
-* The table (example pictured below) shows the one to many and many to one relationships; as needed
 
-![Alt Text](https://github.com/RichelynScott/Final-Project-Group-B/blob/main/PostgreSQL_Database/QuickDBD ERD SCHEMA.png "Database Schema")</br>
+# Machine Learning Model
 
+Several Machine Learning Models were applied to the combined data set to identify the relationship between each of these features and overall rent prices. Simple Linear Regression Analysis was used to identify the relationship between state populations and their corresponding rental prices for Studios, 1-Beds, 2-Beds, 3-Beds, & 4-Beds. Because of the limited amount of data we had (2018-2022), the averaged linear regression model gave us an R-Squared value of 0.26466134182163. This tells us the strength of population to predict price based on our data, it a relatively weak prediction.
 
-# Team Communication Protocols
+We can see that for these weak predictions the models predictive ability was drastically increased with use of a Gradient Boosted Regressor Model (GBR), which increased the R-Squared value to an average of 0.95802951291603. This is either a great fit or, more likely, overfitting to our model/data.
 
-Our team has allowed for communication in the following paths:
-1. Slack 
-    * Group B Channel
-    * Private Group Channel
-2. Group Contact list with individual phone numbers
+Quadratic Regression Model would be similar to Simple Linear Analysis, except that the model allowed polynomial (e.g: x squared) and would produce curves as opposed to a straight line and gave us an average R-Squared value of 0.31056686487748. This did demonstrate a stronger predictive ability than the standard Linear Regression Model, but only a minimal improvement, though not overfitting to the data like the GBR Model.
 
-Additionally, we've established dates and times we will be unavailable due to work and other obligations, as well as establishing additional times to meet throughout the weekend outside of class meetings, such as Sunday before segment deliverable deadlines.
+The K-Nearest Neighbors (KNN) Regression Model provided a higher confidence level than any of the linear regression analysis (with the exception of the Gradient Boosted Regression).  The KNN Regression model yielded the second highest confidence value of 0.89559359322488, almost as strong as the Gradient Boosted Linear Regression from earlier, but less likely than the GBR to overfit our model.
