@@ -51,14 +51,15 @@ Finally, we added a year column to allow for each dataframe to be combined into 
 
 Once our data was cleaned and combined into one csv, we were able to begin creating plots to analyze the initial data set. We first wanted to identify if there were any obvious influences on rent prices (time, location, population, etc.) so we began by plotting some of the data in different ways.  We created box plots and distribution plots for each rental size. 
 
-<p float="left">
-    <img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%20Studios.png" width="300">
-    <img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%201-Beds.png" width="300">
-    <img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%202-Beds.png" width="300">
-    <img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%203-Beds.png" width="300">
-    <img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%204-Beds.png" width="300">
-</p>
+<img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%20Studios.png" width="400">
+<img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%201-Beds.png" width="400">
+<img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%202-Beds.png" width="400">
+<img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%203-Beds.png" width="400">
+<img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%204-Beds.png" width="400">
 
+Ultimately, box plots, distribution plots, and scatter plots showed us that the price was going up as expected, with each additional bedroom. Therefore, bedroom size wouldn't be a great predictor of change in future pricing. However, the scatter plot of population vs. price showed a stronger relationship to price change than location.
+
+<img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/ScatterPlot:%20Population%20Vs%20Price%20(BEST%20CORRELATION).png">
 
 # Database
 
