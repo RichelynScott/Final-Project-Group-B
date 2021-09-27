@@ -39,23 +39,23 @@ We will be using fair market rent datasets from the U.S. Department of Housing a
 ### Cleaning the Data Sets
 
 Each file provides information and classifiers around size, county area names and description as well as some columns that provide no insight to our model, so those will be removed as well as formatting some of the existing information to make it easier to read and process. Several columns were removed: fips2010, a state number, metro_code, areaname, countyname, county_town_name, and a metro number. </br>
-!<img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/lyannebr/Resources/Images/initial_df.png" alt="Raw Data Frame" width="100"></br>
+<img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/lyannebr/Resources/Images/initial_df.png" alt="Raw Data Frame"></br>
 
 We renamed several columns for ease of identification (state, population, and number of bedrooms) and decided to group the information by state, rather than county. So the rental prices by number of bedrooms as well as population will be averaged based on number of counties within each state. Additionally, areas like Washington, D.C., Guam, and the Virgin Islands have been listed on their own. </br>
-![Alt Text](https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/clean_df.png "Cleaned Data Frame")</br>
+<img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/lyannebr/Resources/Images/clean_df.png" alt="Clean Data Frame"></br>
 
 Finally, we added a year column to allow for each dataframe to be combined into one. This was done to simplify pulling in data to our machine learning models and to help identify trends thoughout the years, helping determine if specific years had an impact on changing rent prices.</br>
-![Alt Text](https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/combined_df.png "Combined Data Frame")</br>
+<img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/lyannebr/Resources/Images/combined_df.png" alt="Combined Data Frame"></br>
 
 ### Data Analysis
 
 Once our data was cleaned and combined into one csv, we were able to begin creating plots to analyze the initial data set. We first wanted to identify if there were any obvious influences on rent prices (time, location, population, etc.) so we began by plotting some of the data in different ways.  We created box plots and distribution plots for each rental size. 
 
-![Alt Text](https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%20Studios.png "Box Plot - Studio Rentals")
-![Alt Text](https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%201-Beds.png "Box Plot - 1-Bedroom Rentals")
-![Alt Text](https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%202-Beds.png "Box Plot - 2-Bedroom Rentals")
-![Alt Text](https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%203-Beds.png "Box Plot - 3-Bedroom Rentals")
-![Alt Text](https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%204-Beds.png "Box Plot - 4-Bedroom Rentals")
+<img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%20Studios.png" width="300"></br>
+<img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%201-Beds.png" width="300"></br>
+<img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%202-Beds.png" width="300"></br>
+<img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%203-Beds.png" width="300"></br>
+<img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%204-Beds.png" width="300"></br>
 
 
 # Database
