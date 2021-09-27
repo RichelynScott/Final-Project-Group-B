@@ -39,7 +39,7 @@ We will be using fair market rent datasets from the U.S. Department of Housing a
 ### Cleaning the Data Sets
 
 Each file provides information and classifiers around size, county area names and description as well as some columns that provide no insight to our model, so those will be removed as well as formatting some of the existing information to make it easier to read and process. Several columns were removed: fips2010, a state number, metro_code, areaname, countyname, county_town_name, and a metro number. </br>
-!<img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/initial_df.png" alt="Raw Data Frame" width="100")</br>
+!<img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/lyannebr/Resources/Images/initial_df.png" alt="Raw Data Frame" width="100"></br>
 
 We renamed several columns for ease of identification (state, population, and number of bedrooms) and decided to group the information by state, rather than county. So the rental prices by number of bedrooms as well as population will be averaged based on number of counties within each state. Additionally, areas like Washington, D.C., Guam, and the Virgin Islands have been listed on their own. </br>
 ![Alt Text](https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/clean_df.png "Cleaned Data Frame")</br>
