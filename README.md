@@ -51,11 +51,13 @@ Finally, we added a year column to allow for each dataframe to be combined into 
 
 Once our data was cleaned and combined into one csv, we were able to begin creating plots to analyze the initial data set. We first wanted to identify if there were any obvious influences on rent prices (time, location, population, etc.) so we began by plotting some of the data in different ways.  We created box plots and distribution plots for each rental size. 
 
-<img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%20Studios.png" width="300"></br>
-<img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%201-Beds.png" width="300"></br>
-<img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%202-Beds.png" width="300"></br>
-<img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%203-Beds.png" width="300"></br>
-<img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%204-Beds.png" width="300"></br>
+<p float="left">
+    <img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%20Studios.png" width="300"></br>
+    <img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%201-Beds.png" width="300"></br>
+    <img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%202-Beds.png" width="300"></br>
+    <img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%203-Beds.png" width="300"></br>
+    <img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%204-Beds.png" width="300"></br>
+</p>
 
 
 # Database
