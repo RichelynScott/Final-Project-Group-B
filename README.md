@@ -8,7 +8,7 @@
 
 We have chosen to analyze historic rent prices across the U.S. based on year, state, population, and number of bedrooms. We will use this data to create a machine learning model to predict future rent prices. We chose this topic because the information is of interest to us, and we think the resulting predictions will be helpful to others. Our data set gives fair market rent data from The Department of Housing and Urban Development, which contains rental information from 2018 to 2022 and is broken down by county and year. HUD provides this data annually as a flat csv file.
 
-### With this project we hope to answer several questions:
+#### With this project we hope to answer several questions:
 
 * Which of these features have the greatest influence on rental prices?
 * What affect does change in features like location or population have on rental prices?
@@ -16,7 +16,7 @@ We have chosen to analyze historic rent prices across the U.S. based on year, st
 * Which markets will show the most dramatic increase in rent in the future?
 * Which markets are predicted to have the smallest increased in rent prices?
 
-## Tools: 
+#### Tools: 
 
 * Excel
 * Python
@@ -39,23 +39,25 @@ We will be using fair market rent datasets from the U.S. Department of Housing a
 ### Cleaning the Data Sets
 
 Each file provides information and classifiers around size, county area names and description as well as some columns that provide no insight to our model, so those will be removed as well as formatting some of the existing information to make it easier to read and process. Several columns were removed: fips2010, a state number, metro_code, areaname, countyname, county_town_name, and a metro number. </br>
-<img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/lyannebr/Resources/Images/initial_df.png" alt="Raw Data Frame"></br>
+<img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/initial_df.png" alt="Raw Data Frame"></br>
 
 We renamed several columns for ease of identification (state, population, and number of bedrooms) and decided to group the information by state, rather than county. So the rental prices by number of bedrooms as well as population will be averaged based on number of counties within each state. Additionally, areas like Washington, D.C., Guam, and the Virgin Islands have been listed on their own. </br>
-<img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/lyannebr/Resources/Images/clean_df.png" alt="Clean Data Frame"></br>
+<img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/clean_df.png" alt="Clean Data Frame"></br>
 
 Finally, we added a year column to allow for each dataframe to be combined into one. This was done to simplify pulling in data to our machine learning models and to help identify trends thoughout the years, helping determine if specific years had an impact on changing rent prices.</br>
-<img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/lyannebr/Resources/Images/combined_df.png" alt="Combined Data Frame"></br>
+<img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/combined_df.png" alt="Combined Data Frame"></br>
 
 ### Data Analysis
 
 Once our data was cleaned and combined into one csv, we were able to begin creating plots to analyze the initial data set. We first wanted to identify if there were any obvious influences on rent prices (time, location, population, etc.) so we began by plotting some of the data in different ways.  We created box plots and distribution plots for each rental size. 
 
-<img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%20Studios.png" width="400">
-<img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%201-Beds.png" width="400">
-<img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%202-Beds.png" width="400">
-<img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%203-Beds.png" width="400">
-<img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%204-Beds.png" width="400">
+<p float="left">
+    <img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%20Studios.png" width="350">
+    <img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%201-Beds.png" width="350">
+    <img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%202-Beds.png" width="350">
+    <img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%203-Beds.png" width="350">
+    <img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%204-Beds.png" width="350">
+</p>
 
 Ultimately, box plots, distribution plots, and scatter plots showed us that the price was going up as expected, with each additional bedroom. Therefore, bedroom size wouldn't be a great predictor of change in future pricing. However, the scatter plot of population vs. price showed a stronger relationship to price change than location.
 
@@ -68,7 +70,7 @@ Ultimately, box plots, distribution plots, and scatter plots showed us that the 
 
 This analysis creates a schema consisting of six tables. Each table contains one year and is an intuitive way of dividing information for people who may use the data in the future. Additionally, the combined historical data is contained within one table, predictive data could also be added in as one table or annually for future use. Those tables can be joined to allow the dashboard to pull both past and future prices.
 
-![Alt Text](https://github.com/RichelynScott/Final-Project-Group-B/blob/main/PostgreSQL_Database/QuickDBD%ERD%SCHEMA.png "Database Schema")</br>
+<img src="https://github.com/RichelynScott/Final-Project-Group-B/blob/main/PostgreSQL_Database/QuickDBD%20ERD%20SCHEMA.png"></br>
 
 * Data Module Design is 3NF.(Third normal form (3NF) is a database schema design approach for relational databases which uses normalizing principles to reduce the duplication of data, avoid data anomalies, ensure referential integrity, and simplify data management.)
 * 3NF helps reduce data duplication, it leads to queries requiring multiple joins to retrieve answer.
