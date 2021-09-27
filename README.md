@@ -47,6 +47,17 @@ We renamed several columns for ease of identification (state, population, and nu
 Finally, we added a year column to allow for each dataframe to be combined into one. This was done to simplify pulling in data to our machine learning models and to help identify trends thoughout the years, helping determine if specific years had an impact on changing rent prices.</br>
 ![Alt Text](https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/combined_df.png "Combined Data Frame")</br>
 
+### Data Analysis
+
+Once our data was cleaned and combined into one csv, we were able to begin creating plots to analyze the initial data set. We first wanted to identify if there were any obvious influences on rent prices (time, location, population, etc.) so we began by plotting some of the data in different ways.  We created box plots and distribution plots for each rental size. 
+
+![Alt Text](https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%20Studios.png "Box Plot - Studio Rentals")
+![Alt Text](https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%201-Beds.png "Box Plot - 1-Bedroom Rentals")
+![Alt Text](https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%202-Beds.png "Box Plot - 2-Bedroom Rentals")
+![Alt Text](https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%203-Beds.png "Box Plot - 3-Bedroom Rentals")
+![Alt Text](https://github.com/RichelynScott/Final-Project-Group-B/blob/main/Resources/Images/BoxPlots:%204-Beds.png "Box Plot - 4-Bedroom Rentals")
+
+
 # Database
 
 * Outcome: Design the data warehouse for historical data by using a data modeling concepts. 
@@ -54,8 +65,7 @@ Finally, we added a year column to allow for each dataframe to be combined into 
 
 This analysis creates a schema consisting of six tables. Each table contains one year and is an intuitive way of dividing information for people who may use the data in the future. Additionally, the combined historical data is contained within one table, predictive data could also be added in as one table or annually for future use. Those tables can be joined to allow the dashboard to pull both past and future prices.
 
-
-![Alt Text](https://github.com/RichelynScott/Final-Project-Group-B/blob/main/PostgreSQL_Database/QuickDBD ERD SCHEMA.png "Database Schema")</br>
+![Alt Text](https://github.com/RichelynScott/Final-Project-Group-B/blob/main/PostgreSQL_Database/QuickDBD%ERD%SCHEMA.png "Database Schema")</br>
 
 * Data Module Design is 3NF.(Third normal form (3NF) is a database schema design approach for relational databases which uses normalizing principles to reduce the duplication of data, avoid data anomalies, ensure referential integrity, and simplify data management.)
 * 3NF helps reduce data duplication, it leads to queries requiring multiple joins to retrieve answer.
